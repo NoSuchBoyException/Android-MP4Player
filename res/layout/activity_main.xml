@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_video_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/iv_center_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/center_play" />
+
+    <RelativeLayout
+        android:id="@+id/rl_header_panel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#66C1C1C1" >
+
+        <ImageButton
+            android:id="@+id/btn_header_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/header_back_selector" />
+        
+        <TextView
+            android:id="@+id/tv_video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_header_back"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#D7D8D8" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_footer_panel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#66C1C1C1" >
+
+        <ImageButton
+            android:id="@+id/ib_footer_play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/footer_play" />
+
+        <TextView
+            android:id="@+id/tv_cur_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ib_footer_play"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#D7D8D8" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#D7D8D8" />
+
+        <SeekBar
+            android:id="@+id/sb_video_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_total_time"
+            android:layout_toRightOf="@id/tv_cur_time"
+            android:max="100"
+            android:maxHeight="18dp"
+            android:minHeight="18dp"
+            android:progressDrawable="@drawable/seekbar_selector"
+            android:thumb="@drawable/seekbar_thumb_selector"
+            android:thumbOffset="0dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

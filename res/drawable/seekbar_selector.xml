@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dip" />
+            <!-- <gradient
+                    android:startColor="#ff5a5d5a"
+                    android:centerColor="#ff5a5d5a"
+                    android:centerY="0.75"
+                    android:endColor="#ff5a5d5a"
+                    android:angle="270"
+                    /> -->
+            <gradient
+                    android:startColor="#C0C0C0"
+                    android:centerColor="#C0C0C0"
+                    android:centerY="0.75"
+                    android:endColor="#C0C0C0"
+                    android:angle="270"
+                    />
+            <stroke android:width="15dp" android:color="#00000000"
+                    android:dashWidth="1dp" android:dashGap="1dp" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient
+                        android:startColor="#5b5c5c"
+                        android:centerColor="#5b5c5c"
+                        android:centerY="0.75"
+                        android:endColor="#5b5c5c"
+                        android:angle="270"
+                        />
+                <stroke android:width="15dp" android:color="#00000000"
+                        android:dashWidth="1dp" android:dashGap="1dp" />
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient
+                        android:startColor="#3bbdee"
+                        android:centerColor="#3bbdee"
+                        android:centerY="0.75"
+                        android:endColor="#3bbdee"
+                        android:angle="270"
+                        />
+                <stroke android:width="15dp" android:color="#00000000"
+                        android:dashWidth="1dp" android:dashGap="4dp" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
