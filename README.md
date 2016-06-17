@@ -14,7 +14,7 @@
   
 #### 详细描述
   1. 播放器包含播放，点播和截图功能。
-  2. native层包含create，demux，decode，seekto，snapshot，release五个核心方法。
+  2. native层包含create，demux，decode，seekto，snapshot，release核心方法。
   3. java层包含分流、解码和播放三个核心线程。
   4. 解码后的 Bitmap 较大，播放器允许的最大解码数为 10
   
